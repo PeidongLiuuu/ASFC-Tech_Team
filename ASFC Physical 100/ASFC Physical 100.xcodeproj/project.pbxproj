@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1C79A262D9C562E00A3F3D4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A252D9C562E00A3F3D4 /* FirebaseAnalytics */; };
+		A1C79A282D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A272D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion */; };
+		A1C79A2A2D9C562E00A3F3D4 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A292D9C562E00A3F3D4 /* FirebaseAppCheck */; };
+		A1C79A2C2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A2B2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A1C79A022D9C4EB600A3F3D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C79A2A2D9C562E00A3F3D4 /* FirebaseAppCheck in Frameworks */,
+				A1C79A262D9C562E00A3F3D4 /* FirebaseAnalytics in Frameworks */,
+				A1C79A2C2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C79A282D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +123,9 @@
 			);
 			name = "ASFC Physical 100";
 			packageProductDependencies = (
+				A1C79A252D9C562E00A3F3D4 /* FirebaseAnalytics */,
+				A1C79A292D9C562E00A3F3D4 /* FirebaseAppCheck */,
+				A1C79A2B2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta */,
 			);
 			productName = "ASFC Physical 100";
 			productReference = A1C799F12D9C4EB400A3F3D4 /* ASFC Physical 100.app */;
@@ -135,6 +149,7 @@
 			);
 			name = "ASFC Physical 100Tests";
 			packageProductDependencies = (
+				A1C79A272D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion */,
 			);
 			productName = "ASFC Physical 100Tests";
 			productReference = A1C79A012D9C4EB600A3F3D4 /* ASFC Physical 100Tests.xctest */;
@@ -195,6 +210,9 @@
 			);
 			mainGroup = A1C799E82D9C4EB400A3F3D4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A1C799F22D9C4EB400A3F3D4 /* Products */;
 			projectDirPath = "";
@@ -399,6 +417,7 @@
 				DEVELOPMENT_TEAM = BG9JHN3YWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ASFC P100";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +430,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ASFC.ASFC-Physical-100";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,6 +451,7 @@
 				DEVELOPMENT_TEAM = BG9JHN3YWY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ASFC P100";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +464,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ASFC.ASFC-Physical-100";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +586,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1C79A252D9C562E00A3F3D4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A1C79A272D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		A1C79A292D9C562E00A3F3D4 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A1C79A2B2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1C799E92D9C4EB400A3F3D4 /* Project object */;
 }
