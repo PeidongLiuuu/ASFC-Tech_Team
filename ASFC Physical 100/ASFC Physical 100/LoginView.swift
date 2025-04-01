@@ -81,12 +81,6 @@ struct LoginView: View {
     }
 }
 
-struct RegisterView: View {
-    var body: some View {
-        Text("Registration Page Here")
-            .font(.title)
-    }
-}
 
 #Preview {
     LoginView()
