@@ -11,7 +11,7 @@ import SwiftUI
 struct ASFC_Physical_100App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           LoginView()
         }
     }
 }
