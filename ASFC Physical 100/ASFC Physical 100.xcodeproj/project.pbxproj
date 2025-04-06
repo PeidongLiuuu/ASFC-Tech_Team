@@ -47,16 +47,6 @@
 			path = "ASFC Physical 100";
 			sourceTree = "<group>";
 		};
-		A1C79A042D9C4EB600A3F3D4 /* ASFC Physical 100Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ASFC Physical 100Tests";
-			sourceTree = "<group>";
-		};
-		A1C79A0E2D9C4EB600A3F3D4 /* ASFC Physical 100UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "ASFC Physical 100UITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				A1C799F32D9C4EB400A3F3D4 /* ASFC Physical 100 */,
-				A1C79A042D9C4EB600A3F3D4 /* ASFC Physical 100Tests */,
-				A1C79A0E2D9C4EB600A3F3D4 /* ASFC Physical 100UITests */,
 				A1C799F22D9C4EB400A3F3D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,9 +147,6 @@
 			dependencies = (
 				A1C79A032D9C4EB600A3F3D4 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				A1C79A042D9C4EB600A3F3D4 /* ASFC Physical 100Tests */,
-			);
 			name = "ASFC Physical 100Tests";
 			packageProductDependencies = (
 				A1C79A272D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion */,
@@ -182,9 +167,6 @@
 			);
 			dependencies = (
 				A1C79A0D2D9C4EB600A3F3D4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A1C79A0E2D9C4EB600A3F3D4 /* ASFC Physical 100UITests */,
 			);
 			name = "ASFC Physical 100UITests";
 			packageProductDependencies = (
