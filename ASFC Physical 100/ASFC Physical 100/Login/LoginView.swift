@@ -8,17 +8,19 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
 
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var isLoggedIn = false
     @State private var errorMessage = ""
+    @State private var userName = ""
 
     var body: some View {
         NavigationView {
             if isLoggedIn {
-                HomeView() // <-- New page after login
+                HomeView(userName: userName) 
             } else {
                 VStack(spacing: 20) {
                     Text("ASFC")
@@ -79,22 +81,35 @@ struct LoginView: View {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error {
                 errorMessage = "Login failed: \(error.localizedDescription)"
-            } else {
+            } else if let user = authResult?.user {
+                fetchUserName(uid: user.uid)
+            }
+        }
+    }
+    
+    func fetchUserName(uid: String) {
+        let db = Firestore.firestore()
+        db.collection("users").document(uid).getDocument { document, error in
+            if let document = document, document.exists {
+                userName = document.data()?["name"] as? String ?? "User" // Default to "User" if name not found
                 isLoggedIn = true
-                errorMessage = ""
-                print("Login successful!")
+            } else {
+                errorMessage = "User data not found."
             }
         }
     }
 }
 
+
 struct HomeView: View {
+    var userName: String
+    
     var body: some View {
         VStack {
             Text("Welcome to ASFC!")
                 .font(.largeTitle)
                 .bold()
-            Text("You have successfully logged in.")
+            Text("\(userName), you have successfully logged in.")
                 .font(.title2)
                 .padding()
         }
