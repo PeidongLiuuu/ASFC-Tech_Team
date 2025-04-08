@@ -16,6 +16,12 @@
 		A1C79A282D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A272D9C562E00A3F3D4 /* FirebaseAnalyticsOnDeviceConversion */; };
 		A1C79A2A2D9C562E00A3F3D4 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A292D9C562E00A3F3D4 /* FirebaseAppCheck */; };
 		A1C79A2C2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A1C79A2B2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta */; };
+		AC56A03D2DA416150022E9CF /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A03C2DA416150022E9CF /* Nuke */; };
+		AC56A03F2DA416150022E9CF /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A03E2DA416150022E9CF /* NukeUI */; };
+		AC56A0412DA416500022E9CF /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A0402DA4164F0022E9CF /* Nuke */; };
+		AC56A0432DA416500022E9CF /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A0422DA416500022E9CF /* NukeExtensions */; };
+		AC56A0452DA416500022E9CF /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A0442DA416500022E9CF /* NukeUI */; };
+		AC56A0472DA416500022E9CF /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = AC56A0462DA416500022E9CF /* NukeVideo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +60,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC56A0452DA416500022E9CF /* NukeUI in Frameworks */,
+				AC56A03D2DA416150022E9CF /* Nuke in Frameworks */,
 				A1BDEB782D9C84C900AD5D16 /* FirebaseDatabase in Frameworks */,
 				A1C79A2A2D9C562E00A3F3D4 /* FirebaseAppCheck in Frameworks */,
 				A1BDEB762D9C84C900AD5D16 /* FirebaseCore in Frameworks */,
+				AC56A0412DA416500022E9CF /* Nuke in Frameworks */,
+				AC56A0432DA416500022E9CF /* NukeExtensions in Frameworks */,
 				A1C79A262D9C562E00A3F3D4 /* FirebaseAnalytics in Frameworks */,
+				AC56A03F2DA416150022E9CF /* NukeUI in Frameworks */,
+				AC56A0472DA416500022E9CF /* NukeVideo in Frameworks */,
 				A1C79A2C2D9C562E00A3F3D4 /* FirebaseAppDistribution-Beta in Frameworks */,
 				A1BDEB7C2D9C84C900AD5D16 /* FirebaseStorage in Frameworks */,
 				A1BDEB742D9C84C900AD5D16 /* FirebaseAuth in Frameworks */,
@@ -129,6 +141,12 @@
 				A1BDEB772D9C84C900AD5D16 /* FirebaseDatabase */,
 				A1BDEB792D9C84C900AD5D16 /* FirebaseFirestore */,
 				A1BDEB7B2D9C84C900AD5D16 /* FirebaseStorage */,
+				AC56A03C2DA416150022E9CF /* Nuke */,
+				AC56A03E2DA416150022E9CF /* NukeUI */,
+				AC56A0402DA4164F0022E9CF /* Nuke */,
+				AC56A0422DA416500022E9CF /* NukeExtensions */,
+				AC56A0442DA416500022E9CF /* NukeUI */,
+				AC56A0462DA416500022E9CF /* NukeVideo */,
 			);
 			productName = "ASFC Physical 100";
 			productReference = A1C799F12D9C4EB400A3F3D4 /* ASFC Physical 100.app */;
@@ -209,6 +227,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AC56A03B2DA320800022E9CF /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A1C799F22D9C4EB400A3F3D4 /* Products */;
@@ -589,6 +608,14 @@
 				minimumVersion = 11.11.0;
 			};
 		};
+		AC56A03B2DA320800022E9CF /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -636,6 +663,30 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A1C79A242D9C562E00A3F3D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseAppDistribution-Beta";
+		};
+		AC56A03C2DA416150022E9CF /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Nuke;
+		};
+		AC56A03E2DA416150022E9CF /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NukeUI;
+		};
+		AC56A0402DA4164F0022E9CF /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Nuke;
+		};
+		AC56A0422DA416500022E9CF /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NukeExtensions;
+		};
+		AC56A0442DA416500022E9CF /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NukeUI;
+		};
+		AC56A0462DA416500022E9CF /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NukeVideo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

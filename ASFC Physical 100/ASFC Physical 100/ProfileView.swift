@@ -43,7 +43,7 @@ struct ProfileView: View {
                             .cornerRadius(20)
 
                         VStack {
-                            LazyImage(source: user.profileImageURL) { state in
+                            LazyImage(url: URL(string: user.profileImageURL)) { state in
                                 if let image = state.image {
                                     image
                                         .resizable()
@@ -145,17 +145,18 @@ struct SettingsView: View {
                     .fontWeight(.bold)
                     .padding(.top)
 
-                LazyImage(source: user.profileImageURL) { state in
-                    if let image = state.image {
-                        image
-                            .resizable()
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.white, lineWidth: 3))
-                            .shadow(radius: 4)
-                    } else {
-                        ProgressView()
+                LazyImage(url: URL(string: user.profileImageURL))
+                     { state in
+                        if let image = state.image {
+                            image
+                                .resizable()
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                                .shadow(radius: 4)
+                        } else {
+                            ProgressView()
+                        }
                     }
-                }
                 .frame(width: 100, height: 100)
 
                 EditableField(label: "Image URL", text: $user.profileImageURL)
