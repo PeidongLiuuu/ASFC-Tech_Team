@@ -30,7 +30,7 @@ struct ProfileView: View {
         name: "John Monroe",
         email: "john@figma.com",
         club: "FJSA",
-        profileImageURL: "https://via.placeholder.com/150"
+        profileImageURL: "https://picsum.photos/200"
     )
 
     var body: some View {
@@ -72,7 +72,6 @@ struct ProfileView: View {
 
                 VStack(spacing: 15) {
                     InfoRow(label: "Club", value: user.club)
-                    InfoRow(label: "Create Date", value: "April 16, 2022", icon: "calendar")
                 }
                 .padding(.horizontal)
 
